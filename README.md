@@ -9,7 +9,7 @@ Este projeto tem como objetivo apresentar os serviços, especialidades e formas 
 
 Aqui você pode visualizar a identidade visual da landing page:  
 
-<img src="./src/assets/meta.png" />
+<img src="./src/assets/Meta.PNG" />
 
 
 
