@@ -9,7 +9,7 @@ Este projeto tem como objetivo apresentar os serviços, especialidades e formas 
 
 Aqui você pode visualizar a identidade visual da landing page:  
 
-![Preview da Clínica](https://raw.githubusercontent.com/JhonatasMJ/ProSaude/main/public/meta.png)
+<img src="./src/assets/meta.png" />
 
 
 
