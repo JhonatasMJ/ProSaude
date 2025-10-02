@@ -39,11 +39,15 @@ export default function App() {
       >
         <div>
           <Navbar />
-       
+
+          <section id="home">
             <Hero />
-            <Soluctions/>
-          </div>
-    
+          </section>
+
+          <section id="services">
+            <Soluctions />
+          </section>
+        </div>
       </Transition>
     </div>
   );
