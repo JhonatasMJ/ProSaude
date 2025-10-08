@@ -37,4 +37,11 @@
       description:
         "Exame cardíaco preventivo, essencial para trabalhadores expostos a esforço físico ou riscos cardiovasculares.",
     },
+      {
+      icon: Eletro,   
+      title: "Eletroencefalograma",
+      description:
+        "Avaliação da atividade cerebral,indicado para funções críticas como motorista e operadores de máquinas.",
+    },
   ];
+
