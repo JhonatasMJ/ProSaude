@@ -4,10 +4,11 @@ import { useState } from "react";
 import { Transition } from "@/components/ui/transition";
 import { motion } from "framer-motion";
 import LogoBranca from "@/assets/logoBranca.svg?react";
-
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Soluctions from "@/components/Soluctions";
+import Soluctions from "@/components/Services";
+import About from "@/components/About";
+import Trainings from "@/components/Trainings";
 
 export default function App() {
   const [key] = useState(0);
@@ -39,13 +40,17 @@ export default function App() {
       >
         <div>
           <Navbar />
-
           <section id="home">
             <Hero />
           </section>
-
           <section id="services">
             <Soluctions />
+          </section>
+           <section id="about">
+            <About />
+          </section>
+            <section id="trainings">
+            <Trainings/>
           </section>
         </div>
       </Transition>

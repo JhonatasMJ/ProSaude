@@ -9,7 +9,7 @@ export default function Navbar() {
     { name: "Início", to: "home" },
     { name: "Serviços", to: "services" },
     { name: "Sobre", to: "about" },
-    { name: "Estrutura", to: "structure" },
+    { name: "Treinamentos", to: "trainings" },
   ];
 
   

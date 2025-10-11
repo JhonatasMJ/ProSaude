@@ -13,7 +13,7 @@ export default function Soluctions() {
   return (
     <section
       id="solucoes"
-      className="min-h-screen relative flex items-center pb-32 pt-42 bg-marca2"
+      className="relative flex items-center py-32 bg-marca2"
     >
    
       <div className="bg-marca2 absolute left-1/2 -translate-x-1/2 -top-6 rounded-full p-4">

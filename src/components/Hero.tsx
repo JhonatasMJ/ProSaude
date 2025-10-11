@@ -5,9 +5,9 @@ import { Button } from '@/components/ui/button'
 
 export default function Hero () {
     return (
-        <section id="home" className="min-h-screen relative flex items-center py-32">
+        <section id="home" className="relative flex items-center py-74">
             <div className="max-w-[1200px] mx-auto px-4 z-10 w-full relative">
-                <Decorator className='absolute -top-1/2  w-12 h-12'/>
+                <Decorator className='absolute -top-1/3  w-12 h-12'/>
                 <span className="text-marca1 font-semibold text-lg">Buscamos</span>
                 <h1 className="text-6xl font-bold text-texto max-w-2xl">Cuidar da sua  <span className='text-marca1'>saúde</span> no ambiente de trabalho.</h1>
                 <p className='max-w-2xl text-desc mt-8'>Especialistas em Medicina Ocupacional, promovendo bem-estar, segurança e produtividade nas empresas por meio de exames, programas legais e ações preventivas.</p>
