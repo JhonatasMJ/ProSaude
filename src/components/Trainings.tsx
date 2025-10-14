@@ -8,6 +8,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { carrousels } from "@/utils/carrousel";
+import { Button } from "@/components/ui/button";
 
 export default function Trainings() {
   return (
@@ -29,6 +30,9 @@ export default function Trainings() {
             Especialistas em Medicina Ocupacional, promovendo bem-estar,
             segurança e produtividade nas empresas
           </p>
+          <Button className="mt-8 bg-marca1 hover:bg-marca3 border-none text-white px-12" >
+            Entrar em contato
+          </Button>
         </div>
 
         <div className="flex-1 relative lg:ml-16 lg:-mr-[10vw]">

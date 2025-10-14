@@ -3,12 +3,14 @@
 import { useState } from "react";
 import { Transition } from "@/components/ui/transition";
 import { motion } from "framer-motion";
-import LogoBranca from "@/assets/logoBranca.svg?react";
+import LogoIntro from "@/assets/logoIntro.svg?react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Soluctions from "@/components/Services";
 import About from "@/components/About";
 import Trainings from "@/components/Trainings";
+import Video from "@/components/Video";
+import Questions from "@/components/Questions";
 
 export default function App() {
   const [key] = useState(0);
@@ -33,7 +35,7 @@ export default function App() {
                 ease: "easeOut",
               }}
             >
-              <LogoBranca className="w-32 h-32" />
+              <LogoIntro className="w-32 h-32" />
             </motion.div>
           </div>
         }
@@ -46,11 +48,17 @@ export default function App() {
           <section id="services">
             <Soluctions />
           </section>
-           <section id="about">
+          <section id="about">
             <About />
           </section>
-            <section id="trainings">
-            <Trainings/>
+          <section id="trainings">
+            <Trainings />
+          </section>
+          <section id="video">
+            <Video />
+          </section>
+           <section id="questions">
+            <Questions />
           </section>
         </div>
       </Transition>
