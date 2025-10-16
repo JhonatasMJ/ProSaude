@@ -11,6 +11,7 @@ import About from "@/components/About";
 import Trainings from "@/components/Trainings";
 import Video from "@/components/Video";
 import Questions from "@/components/Questions";
+import Contact from "@/components/Contact";
 
 export default function App() {
   const [key] = useState(0);
@@ -59,6 +60,9 @@ export default function App() {
           </section>
            <section id="questions">
             <Questions />
+          </section>
+          <section id="contact">
+            <Contact/>
           </section>
         </div>
       </Transition>
