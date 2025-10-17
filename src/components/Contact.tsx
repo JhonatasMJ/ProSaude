@@ -1,12 +1,9 @@
 import Decorator from "@/assets/bottom-left.svg?react";
 import { motion } from "motion/react";
 import ContactForm from "@/components/ContactForm";
-
-
-
+import Maps from "./Maps";
 
 export default function Contact() {
-
   return (
     <section id="home" className="relative flex items-center py-40">
       <div className="max-w-[1200px] mx-auto px-4 z-10 w-full relative">
@@ -26,11 +23,13 @@ export default function Contact() {
       </div>
 
       <motion.div
-        className="absolute right-0 top-1/2 -translate-y-1/2 w-2/5 h-full bg-marca1"
+        className="absolute right-0 top-1/2 -translate-y-1/2 w-2/5 h-full bg-marca1 overflow-visible"
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 4, ease: "easeOut" }}
-      />
+      >
+       <Maps />
+      </motion.div>
     </section>
   );
 }

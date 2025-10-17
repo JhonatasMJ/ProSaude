@@ -22,10 +22,11 @@ export default function ContactForm() {
       message: "",
     },
   });
-  const [isLoading, setIsLoading] = useState(false);
+
+  const [status, setStatus] = useState<"idle" | "sending" | "sent">("idle");
 
   const onSubmit = async (data: ContactFormLabels) => {
-    setIsLoading(true);
+    setStatus("sending");
 
     try {
       const result = await emailjs.send(
@@ -41,11 +42,14 @@ export default function ContactForm() {
 
       form.reset();
       console.log("✅ Enviado com sucesso:", result.text);
+      setStatus("sent");
+/* Seta o botao enviado */
+     
+      setTimeout(() => setStatus("idle"), 3000);
     } catch (error) {
       console.error("❌ Erro ao enviar:", error);
-      alert("Erro ao enviar a mensagem. Tente novamente.");
-    } finally {
-      setIsLoading(false);
+      setStatus("idle");
+      /* Seta o botao inativo */
     }
   };
 
@@ -61,7 +65,9 @@ export default function ContactForm() {
             name="username"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Nome</FormLabel>
+                <FormLabel className="text-xl font-bold mt-8">
+                  Nome Completo<span className="text-marca1">.</span>
+                </FormLabel>
                 <FormControl>
                   <Input placeholder="Digite seu nome" {...field} />
                 </FormControl>
@@ -75,7 +81,9 @@ export default function ContactForm() {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>E-mail</FormLabel>
+                <FormLabel className="text-xl font-bold ">
+                  E-mail<span className="text-marca1">.</span>
+                </FormLabel>
                 <FormControl>
                   <Input
                     type="email"
@@ -88,13 +96,14 @@ export default function ContactForm() {
             )}
           />
 
-         
           <FormField
             control={form.control}
             name="message"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Mensagem</FormLabel>
+                <FormLabel className="text-xl font-bold ">
+                  Mensagem<span className="text-marca1">.</span>
+                </FormLabel>
                 <FormControl>
                   <Textarea
                     placeholder="Digite sua mensagem..."
@@ -107,8 +116,20 @@ export default function ContactForm() {
             )}
           />
 
-          <Button type="submit" className="w-full" disabled={isLoading}>
-            {isLoading ? "Enviando..." : "Enviar Mensagem"}
+          <Button
+            type="submit"
+            className={`w-full transition-colors py-6 text-md ${
+              status === "sent"
+                ? "bg-marca1 "
+                : "bg-marca2 hover:bg-marca1"
+            }`}
+            disabled={status === "sending"}
+          >
+            {status === "sending"
+              ? "Enviando..."
+              : status === "sent"
+              ? "Enviado ✅"
+              : "Enviar Mensagem"}
           </Button>
         </form>
       </Form>

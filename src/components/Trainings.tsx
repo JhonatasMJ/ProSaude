@@ -61,7 +61,7 @@ export default function Trainings() {
                     <div className="p-1">
                       <Card className="rounded-lg shadow-md  border-none py-8">
                         <CardHeader>
-                          <div className="bg-marca2 p-2 rounded-md w-fit border-blue-100 border-3">
+                          <div className="bg-marca2 p-2 rounded-md w-fit border-blue-100 border-4">
                             <Icon className="text-white size-6" />
                           </div>
                           <CardTitle className="font-bold text-desc text-2xl mt-4">
