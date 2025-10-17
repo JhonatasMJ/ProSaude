@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "motion/react";
 import { Link } from "react-scroll";
-import Logo from "@/assets/logo.svg?react";
+import Logo from "@/assets/Logo.svg?react";
 import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
