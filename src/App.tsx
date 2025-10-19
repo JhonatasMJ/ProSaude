@@ -12,6 +12,8 @@ import Trainings from "@/components/Trainings";
 import Video from "@/components/Video";
 import Questions from "@/components/Questions";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import ToTop from "./components/ToTop";
 
 export default function App() {
   const [key] = useState(0);
@@ -64,6 +66,10 @@ export default function App() {
           <section id="contact">
             <Contact/>
           </section>
+           <section id="footer">
+            <Footer/>
+          </section>
+          <ToTop />
         </div>
       </Transition>
     </div>
