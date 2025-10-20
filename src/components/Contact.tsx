@@ -6,7 +6,7 @@ import Maps from "./Maps";
 export default function Contact() {
   return (
     <section id="home" className="relative flex items-center py-40">
-      <div className="max-w-[1200px] mx-auto px-4 z-10 w-full relative">
+      <div className="max-w-[1200px] mx-auto  z-10 w-full relative">
         <Decorator className="absolute -top-1/5 w-12 h-12" />
         <span className="text-marca1 font-semibold text-lg">Dúvidas?</span>
         <h1 className="text-5xl font-bold text-texto max-w-lg">
