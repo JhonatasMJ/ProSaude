@@ -11,7 +11,7 @@ export default function About() {
       className=" relative flex items-center pt-52  pb-36"
     >
       <motion.div
-        className="absolute left-0 top-1/2 -translate-y-1/2 w-2/5 h-full"
+        className="absolute left-0 top-1/2 -translate-y-1/2 w-2/5 h-full hidden md:block"
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ amount: 0.3 }}
@@ -37,7 +37,7 @@ export default function About() {
             Sempre{" "}
           </motion.span>
           <motion.h1
-            className="text-6xl font-bold text-texto"
+            className="text-4xl md:text-6xl font-bold text-texto"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ amount: 0.3 }}

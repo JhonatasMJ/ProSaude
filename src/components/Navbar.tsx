@@ -23,7 +23,7 @@ export default function Navbar() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 4, ease: "easeOut" }}
     >
-      <div className="bg-marca1 flex items-center justify-center text-white text-lg font-semibold py-2">
+      <div className="bg-marca1 flex items-center justify-center text-white text-xs md:text-lg font-semibold py-2">
         <p>
           Av. Marechal Deodoro da Fonseca, 1104 Jardim Paraíso - Monte Alto-SP
         </p>

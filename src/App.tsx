@@ -13,7 +13,7 @@ import Video from "@/components/Video";
 import Questions from "@/components/Questions";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import ToTop from "./components/ToTop";
+import ToTop from "@/components/ToTop";
 
 export default function App() {
   const [key] = useState(0);

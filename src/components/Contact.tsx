@@ -5,7 +5,7 @@ import Maps from "./Maps";
 
 export default function Contact() {
   return (
-    <section id="home" className="relative flex items-center py-40">
+    <section id="home" className="relative flex items-center py-40 px-4">
       <div className="max-w-[1200px] mx-auto  z-10 w-full relative">
         <Decorator className="absolute -top-1/5 w-12 h-12" />
         <span className="text-marca1 font-semibold text-lg">Dúvidas?</span>
@@ -17,13 +17,13 @@ export default function Contact() {
           nossos serviços.
         </p>
 
-        <div>
-          <ContactForm />
+        <div >
+          <ContactForm  />
         </div>
       </div>
 
       <motion.div
-        className="absolute right-0 top-1/2 -translate-y-1/2 w-2/5 h-full bg-marca1 overflow-visible"
+        className="absolute right-0 top-1/2 -translate-y-1/2 w-2/5 h-full bg-marca1 overflow-visible hidden md:block"
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 4, ease: "easeOut" }}

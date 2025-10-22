@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 export default function Questions() {
   return (
-    <section className="bg-marca2">
+    <section className="bg-marca2 ">
       <div className="flex flex-col items-center justify-center py-20 max-w-[1200px] mx-auto relative overflow-hidden">
         {/* Decoradores animados */}
         <motion.div
@@ -31,7 +31,7 @@ export default function Questions() {
           <Decorator className="w-12 h-12" />
         </motion.div>
 
-        {/* Cabeçalho animado */}
+    
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -45,16 +45,16 @@ export default function Questions() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl font-bold mb-12 text-white max-w-1/3 text-center"
+          className="text-2xl md:text-4xl font-bold mb-12 text-white md:max-w-1/3 text-center"
         >
           Perguntas frequentes{" "}
           <span className="text-marca1">sobre nossa clínica.</span>
         </motion.h1>
 
-        {/* Conteúdo */}
-        <div className="w-full grid grid-cols-2 gap-4">
-          {/* Coluna 1 */}
-          <Accordion type="single" collapsible className="w-full space-y-3">
+    
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
+    
+          <Accordion type="single" collapsible className="w-full space-y-3 ">
             {["Sugerir alguma pergunta 01", "Sugerir alguma pergunta 03", "Sugerir alguma pergunta 05"].map(
               (title, i) => (
                 <motion.div

@@ -34,7 +34,7 @@ export default function Soluctions() {
             <span className="text-marca1 font-bold text-lg">
               Conheça nossas
             </span>
-            <h1 className="text-5xl font-bold text-marca3 max-w-2xl mt-2">
+            <h1 className="text-4xl md:text-5xl font-bold text-marca3 max-w-2xl mt-2">
               Soluções completas em{" "}
               <span className="text-marca1">Medicina Ocupacional.</span>
             </h1>

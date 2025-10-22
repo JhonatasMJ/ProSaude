@@ -3,13 +3,13 @@ import { motion } from "motion/react";
 
 export default function Video() {
   return (
-    <section className="py-20 relative">
-      <span className="bg-marca1 w-full h-54 absolute left-0 top-1/2"></span>
+    <section className="py-20 relative px-4">
+      <span className="bg-marca1 w-full h-54 absolute left-0 top-1/2 "></span>
       
       <div className="max-w-[1200px] mx-auto ">
-        <div className="flex justify-between items-center mb-6">
+        <div className="flex md:flex-row flex-col justify-between md:items-center mb-6">
           <motion.h1
-            className="font-bold text-5xl max-w-[33%]"
+            className="font-bold text-3xl md:text-5xl md:max-w-[33%] "
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ amount: 0.3 }}
@@ -18,7 +18,7 @@ export default function Video() {
             Venha conhecer <span className="text-marca1">nossa clínica.</span>
           </motion.h1>
           <motion.p
-            className="max-w-[33%] text-lg"
+            className="md:max-w-[33%] text-lg mt-6 md:mt-0"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ amount: 0.3 }}
@@ -42,7 +42,7 @@ export default function Video() {
             transition={{ duration: 0.1 }}
           >
             <iframe
-              className="w-full h-[700px] rounded-md shadow-2xl"
+              className="w-full h-[350px] md:h-[700px] rounded-md shadow-2xl"
               src="https://www.youtube.com/embed/ScMzIvxBSi4"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
