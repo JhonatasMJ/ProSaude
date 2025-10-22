@@ -6,7 +6,7 @@ import { Link } from "react-scroll"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { Menu } from "lucide-react"
-import Logo from "@/assets/logo.svg?react"
+import Logo from "@/assets/Logo.svg?react"
 
 export default function Navbar() {
   const [activeLink, setActiveLink] = useState("home")
@@ -25,20 +25,20 @@ export default function Navbar() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
     >
-      {/* Faixa superior */}
+      
       <div className="bg-marca1 flex items-center justify-center text-white text-[10px] sm:text-xs md:text-sm font-medium py-1.5 px-2 text-center">
         <p>Av. Marechal Deodoro da Fonseca, 1104 Jardim Paraíso - Monte Alto-SP</p>
       </div>
 
-      {/* Navbar principal */}
+     
       <div className="shadow-sm bg-white">
         <nav className="py-4 max-w-[1200px] mx-auto flex items-center justify-between px-4 sm:px-6">
-          {/* Logo */}
+       
           <Link to="home" smooth offset={-120} duration={500} onSetActive={() => setActiveLink("home")}>
             <Logo className="cursor-pointer w-36 sm:w-48 text-marca1" />
           </Link>
 
-          {/* Menu Desktop */}
+      
           <ul className="hidden md:flex items-center gap-8">
             {links.map((link) => (
               <Link
