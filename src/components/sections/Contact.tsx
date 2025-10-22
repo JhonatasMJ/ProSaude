@@ -1,7 +1,7 @@
 import Decorator from "@/assets/bottom-left.svg?react";
 import { motion } from "motion/react";
 import ContactForm from "@/components/ContactForm";
-import Maps from "./Maps";
+import Maps from "@/components/Maps";
 
 export default function Contact() {
   return (
@@ -9,7 +9,7 @@ export default function Contact() {
       <div className="max-w-[1200px] mx-auto  z-10 w-full relative">
         <Decorator className="absolute -top-1/5 w-12 h-12" />
         <span className="text-marca1 font-semibold text-lg">Dúvidas?</span>
-        <h1 className="text-5xl font-bold text-texto max-w-lg">
+        <h1 className=" text-4xl md:text-5xl font-bold text-texto max-w-lg">
           Entre em <span className="text-marca1">contato</span> conosco
         </h1>
         <p className="max-w-lg text-desc mt-8">
