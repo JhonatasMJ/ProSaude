@@ -58,7 +58,7 @@ export default function ContactForm() {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="space-y-4 md:w-2/4"
+          className="space-y-6 "
         >
           <FormField
             control={form.control}
