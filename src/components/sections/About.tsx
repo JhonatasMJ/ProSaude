@@ -1,4 +1,4 @@
-import AboutImg from "@/assets/About.png";
+import AboutImg from "@/assets/About.jpg";
 import Decorator from "@/assets/bottom-left.svg?react";
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
@@ -79,10 +79,10 @@ export default function About() {
           >
             <motion.div
               className="flex-1"
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.01 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button className="w-full bg-marca2 text-md group relative overflow-hidden">
+              <Button className="w-full bg-marca2 text-md group relative overflow-hidden  hover:bg-marca2 hover:ring-3 hover:ring-marca2/50 hover:scale-101 transform transition duration-300 border-none text-white px-10 py-5 text-sm sm:text-base ">
                 <span className="relative z-10 flex items-center gap-2 justify-center">
                   Cursos e Palestras
                   <motion.div

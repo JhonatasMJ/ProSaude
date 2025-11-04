@@ -1,8 +1,7 @@
-import HeroImg from "@/assets/Hero.png";
+import HeroImg from "@/assets/Hero.jpg";
 import Decorator from "@/assets/bottom-left.svg?react";
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
-
 import { Link } from "react-scroll";
 
 export default function Hero() {
