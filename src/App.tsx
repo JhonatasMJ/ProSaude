@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Transition } from "@/components/ui/transition";
 
 import Navbar from "@/components/sections/Navbar";
@@ -18,6 +18,24 @@ import LogoSvg from "@/components/LogoSvg";
 
 export default function App() {
   const [key] = useState(0);
+  const [isAnimated, setIsAnimated] = useState(true);
+
+  // Desbloqueia o scroll após o tempo total da animação (intro + transição)
+  useEffect(() => {
+    const totalDuration = (4 + 1) * 1000; // 4s intro + 1s transição
+    const timer = setTimeout(() => {
+      setIsAnimated(false);
+    }, totalDuration);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = isAnimated ? "hidden" : "auto";
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isAnimated]);
 
   return (
     <div className="relative w-full h-screen flex items-center justify-center">

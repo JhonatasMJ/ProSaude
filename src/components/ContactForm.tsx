@@ -13,9 +13,12 @@ import { Button } from "./ui/button";
 import emailjs from "emailjs-com";
 import { useState } from "react";
 import type ContactFormLabels from "@/types/ContactFormLabels";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { contactFormSchema, type ContactFormData } from "@/schemas/contactForm";
 
 export default function ContactForm() {
-  const form = useForm<ContactFormLabels>({
+  const form = useForm<ContactFormData>({
+    resolver: zodResolver(contactFormSchema),
     defaultValues: {
       username: "",
       email: "",
@@ -65,7 +68,7 @@ export default function ContactForm() {
             name="username"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-xl font-bold mt-8">
+                <FormLabel className="text-xl font-bold mt-8 !text-foreground">
                   Nome Completo<span className="text-marca1">.</span>
                 </FormLabel>
                 <FormControl>
@@ -81,7 +84,7 @@ export default function ContactForm() {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-xl font-bold ">
+                <FormLabel className="text-xl font-bold !text-foreground">
                   E-mail<span className="text-marca1">.</span>
                 </FormLabel>
                 <FormControl>
@@ -101,7 +104,7 @@ export default function ContactForm() {
             name="message"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-xl font-bold ">
+                <FormLabel className="text-xl font-bold !text-foreground">
                   Mensagem<span className="text-marca1">.</span>
                 </FormLabel>
                 <FormControl>

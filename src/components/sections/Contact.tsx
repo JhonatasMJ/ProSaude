@@ -22,7 +22,8 @@ export default function Contact() {
       label: "Endereço",
       value:
         "Av. Marechal Deodoro da Fonseca, 1104 Jardim Paraíso - Monte Alto-SP",
-      href: "#",
+      href:"https://www.google.com/maps?q=Av.+Marechal+Deodoro+da+Fonseca,+1104+Jardim+Paraíso+-+Monte+Alto,+SP"
+
     },
     {
       icon: Instagram,
@@ -79,7 +80,7 @@ export default function Contact() {
 
      
       <motion.div
-        className="border-1 border-gray-100 rounded-lg p-8  bg-white"
+        className="border-1 border-gray-200 rounded-lg p-8  bg-white"
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
