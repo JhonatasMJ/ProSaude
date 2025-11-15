@@ -13,9 +13,15 @@ export default function Contact() {
     },
     {
       icon: Phone,
-      label: "Telefone",
-      value: "+55 (11) 99999-9999",
-      href: "tel:+5511999999999",
+      label: "Telefone(Agendamentos)",
+      value: "+55 (16) 996395518",
+      href: "https://wa.me/5516996395518?text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20agendamento."
+    },
+      {
+      icon: Phone,
+      label: "Telefone(Comercial)",
+      value: "+55 (16) 997336745",
+      href: "https://wa.me/5516997336745?text=Ol%C3%A1,%20gostaria%20de%20informa%C3%A7%C3%B5es."
     },
     {
       icon: MapPin,

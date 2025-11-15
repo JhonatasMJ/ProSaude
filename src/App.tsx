@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import {  useEffect, useState } from "react";
 import { Transition } from "@/components/ui/transition";
 
 import Navbar from "@/components/sections/Navbar";
@@ -13,8 +13,8 @@ import Questions from "@/components/sections/Questions";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
 import ToTop from "@/components/ToTop";
-
 import LogoSvg from "@/components/LogoSvg";
+
 
 export default function App() {
   const [key] = useState(0);
