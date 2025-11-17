@@ -1,49 +1,36 @@
-# 🏥 Landing Page - Clínica Pró Saúde
+# Clínica Pró-Saúde 🏥💉
 
-Bem-vindo(a) ao repositório da landing page da **Clínica Pró Saúde**.  
-Este projeto tem como objetivo apresentar os serviços, especialidades e formas de contato da clínica, oferecendo uma experiência simples, moderna e responsiva aos visitantes.  
+<img src="./src/assets/banner.png" />
+
+&nbsp;
+
+## 📚 Informações sobre o projeto
+
+* O projeto consistiu no desenvolvimento de uma Landing Page institucional para a clínica Pro Saúde, apresentando seus serviços, equipe de profissionais, cursos oferecidos e demais informações relevantes sobre a empresa. Trata-se de um trabalho realizado como freelancer, com foco em comunicação clara, organização do conteúdo e experiência do usuário.
+&nbsp;
+
+## 🎨 Telas do projeto
+
+<img src="./src/assets/telas.png" />
+
+&nbsp;
+
+## 🛠️ Tecnologias/Ferramentas utilizadas
+
+* React 
+* Typescript
+* Tailwind
+* Shadcn/Ui
+* Framer Motion
+* React Scroll
+* Email Js
+* Zod
+
+
+&nbsp;
 
 ---
 
-## 📸 Preview
-
-Aqui você pode visualizar a identidade visual da landing page:  
-
-<img src="./src/assets/Meta.PNG" />
+<p align="center">Feito com 💚 por <a href="https://jhonatas-portfolio.vercel.app/">Jhonatas Micael</a></p>
 
 
-
-
----
-
-<!-- ## ✨ Funcionalidades
-
-- Layout moderno e totalmente **responsivo** 📱💻  
-- Sessão **Sobre a Clínica**  
-- Lista de **Serviços e Especialidades**  
-- **Formulário de Contato** integrado (WhatsApp ou e-mail)  
-- Animações suaves utilizando **Framer Motion**  
-
---- -->
-
-## 🛠️ Tecnologias Utilizadas
-
-- ⚛️ [React](https://react.dev/)  
-- 🎨 [TailwindCSS](https://tailwindcss.com/)  
-- 🧩 [ShadCN/UI](https://ui.shadcn.com/)  
-- 🎬 [Framer Motion](https://www.framer.com/motion/)  
-
-<!-- ---
-
-## 📞 Contato
-
-📍 Endereço: [Rua Exemplo, 123 - Cidade/Estado]  
-📧 E-mail: [contato@clinicaprosaude.com]  
-📱 WhatsApp: [(00) 90000-0000]  
-🌐 Site: [www.clinicaprosaude.com](http://www.clinicaprosaude.com)  
-
---- -->
-
-## ❤️ Créditos
-
-Feito com ❤️ por **Jhonatas**  
