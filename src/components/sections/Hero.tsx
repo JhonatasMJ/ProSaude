@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 
 export default function Hero() {
   return (
-    <section id="home" className="relative flex items-center py-40  md:py-74">
+    <section id="home" className="relative flex items-center py-40 md:py-74 w-full">
       <div className="max-w-[1200px] mx-auto px-4 z-10 w-full relative">
         <Decorator className="absolute -top-1/3  w-12 h-12" />
         <motion.span

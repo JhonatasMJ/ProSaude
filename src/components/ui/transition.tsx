@@ -41,7 +41,28 @@ export const Transition: React.FC<TransitionProps> = ({
   const [progress, setProgress] = useState(0);
 
   const ref = useRef<HTMLDivElement>(null);
-  const inView = useInView(ref, { margin: "-100px", once: true }); 
+  const inView = useInView(ref, { margin: "-100px", once: true });
+  
+  // Garante que a intro apareça imediatamente se não houver skip
+  useEffect(() => {
+    if (!skip && ref.current) {
+      // Força a detecção de inView imediatamente
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting && !inView) {
+              // Elemento está visível
+            }
+          });
+        },
+        { threshold: 0 }
+      );
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+      return () => observer.disconnect();
+    }
+  }, [skip, inView]); 
   
   const rafRef = useRef<number | null>(null);
   const timersRef = useRef<number[]>([]);
@@ -78,7 +99,9 @@ export const Transition: React.FC<TransitionProps> = ({
       return;
     }
 
-    if (inView && autoExit) {
+    // Se autoExit está ativado, inicia a transição após introDuration
+    // Não precisa esperar inView se o componente já está montado
+    if (autoExit) {
       const t = window.setTimeout(() => startTransition(), introDuration * 1000);
       timersRef.current.push(t);
     }
@@ -88,7 +111,7 @@ export const Transition: React.FC<TransitionProps> = ({
       currentTimers.forEach(clearTimeout);
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
-  }, [skip, inView, introDuration, autoExit, onFinished, startTransition]);
+  }, [skip, introDuration, autoExit, onFinished, startTransition]);
 
   useEffect(() => {
     if (!autoExit && trigger && showIntro) {

@@ -4,7 +4,7 @@ import video from "@/assets/videos/video.mp4";
 
 export default function Video() {
   return (
-    <section className="py-20 relative px-4">
+    <section className="py-20 relative px-4 w-full">
       <span className="bg-marca1 w-full h-42 md:h-54 absolute left-0 top-1/2 "></span>
       <div className="max-w-[1200px] mx-auto">
         <div className="flex md:flex-row flex-col justify-between md:items-center mb-6">

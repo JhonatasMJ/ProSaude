@@ -41,8 +41,8 @@ export default function Contact() {
 
   return (
     <section
-      id="contato"
-      className="relative grid md:grid-cols-2 gap-12 pt-40 pb-30 px-4 max-w-[1200px] mx-auto"
+      id="contact"
+      className="relative grid md:grid-cols-2 gap-12 pt-40 pb-30 px-4 max-w-[1200px] mx-auto w-full"
     >
 
       <div className="relative">

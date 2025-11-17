@@ -17,20 +17,19 @@ import { carrousels } from "@/utils/carrousel";
 import Autoplay from "embla-carousel-autoplay";
 import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
-import { MessageCircle } from "lucide-react";
 import { Link } from "react-scroll";
 
 export default function Trainings() {
   return (
     <section
       id="trainings"
-      className="flex items-center py-20 md:py-32 bg-marca2 overflow-x-hidden px-4 sm:px-6 lg:px-8"
+      className="flex items-center py-20 md:py-32 bg-marca2 px-4 sm:px-6 lg:px-8 w-full"
     >
       <div className="flex flex-col lg:flex-row items-center w-full max-w-[1200px] mx-auto relative z-10 gap-16 lg:gap-24">
         
         <Decorator className="absolute -top-[5%] w-10 h-10 sm:w-12 sm:h-12 left-2 sm:left-0 opacity-70 -mt-4 md:mt-0" />
 
-        {/* ====== Texto ====== */}
+       
         <div className="flex-1 lg:text-left w-full">
           <motion.span
             className="text-marca1 font-semibold text-base sm:text-lg"
@@ -64,7 +63,7 @@ export default function Trainings() {
             segurança e produtividade nas empresas.
           </motion.p>
 
-          {/* ====== Botão (visível apenas no desktop) ====== */}
+      
           <motion.div
             className="hidden sm:flex"
             initial={{ opacity: 0, y: 20 }}
@@ -85,14 +84,14 @@ export default function Trainings() {
                     hover: { x: 5, transition: { duration: 0.6 } },
                   }}
                 >
-                  <MessageCircle className="w-5 h-5" />
+                 
                 </motion.div>
               </Link>
             </Button>
           </motion.div>
         </div>
 
-        {/* ====== Carrossel ====== */}
+       
         <motion.div
           className="flex-1 relative w-full max-w-lg mx-auto lg:ml-16"
           initial={{ opacity: 0, x: 100 }}
@@ -152,8 +151,6 @@ export default function Trainings() {
             </div>
           </Carousel>
         </motion.div>
-
-        
         <motion.div
           className="block sm:hidden w-full"
           initial={{ opacity: 0, y: 20 }}
@@ -174,7 +171,7 @@ export default function Trainings() {
                   hover: { x: 5, transition: { duration: 0.6 } },
                 }}
               >
-                <MessageCircle className="w-5 h-5" />
+              
               </motion.div>
             </Link>
           </Button>

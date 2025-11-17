@@ -13,8 +13,8 @@ import { motion } from "motion/react";
 export default function Soluctions() {
   return (
     <section
-      id="solucoes"
-      className="relative flex items-center py-32 bg-marca2"
+      id="services"
+      className="relative flex items-center py-32 bg-marca2 w-full"
     >
       <div className="bg-marca2 absolute left-1/2 -translate-x-1/2 -top-6 rounded-full p-4">
         <MoveDown className="size-7 text-white animate-bounce mt-2" />

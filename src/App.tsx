@@ -31,14 +31,20 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = isAnimated ? "hidden" : "auto";
+    if (isAnimated) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflowX = "hidden";
+      document.body.style.overflowY = "auto";
+    }
     return () => {
-      document.body.style.overflow = "auto";
+      document.body.style.overflowX = "hidden";
+      document.body.style.overflowY = "auto";
     };
   }, [isAnimated]);
 
   return (
-    <div className="relative w-full h-screen flex items-center justify-center">
+    <div className={`relative w-full ${isAnimated ? 'h-screen flex items-center justify-center' : 'min-h-screen'}`}>
       <Transition
         key={key}
         introDuration={4}
@@ -49,7 +55,7 @@ export default function App() {
         className="bg-marca1 dark:bg-white"
         intro={<LogoSvg />}
       >
-        <div>
+        <div className="w-full">
           <Navbar />
           <section id="home">
             <Hero />
@@ -75,7 +81,7 @@ export default function App() {
           <section id="footer">
             <Footer />
           </section>
-          <ToTop />
+           <ToTop />
         </div>
       </Transition>
     </div>

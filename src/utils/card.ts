@@ -2,7 +2,8 @@
    import Documentos from "@/assets/icons/Documentos.svg?react";
    import Espirometria from "@/assets/icons/Espirometria.svg?react"; 
    import Audiometria from "@/assets/icons/Audiometria.svg?react"; 
-   import Eletro from "@/assets/icons/Eletrocardiograma.svg?react"; 
+   import Eletro from "@/assets/icons/Eletro.svg?react"; 
+   import EletroCenfalograma from "@/assets/icons/EletroCenfalograma.svg?react";
       
    
 
@@ -38,7 +39,7 @@
         "Exame cardíaco preventivo, essencial para trabalhadores expostos a esforço físico ou riscos cardiovasculares.",
     },
       {
-      icon: Eletro,   
+      icon: EletroCenfalograma,   
       title: "Eletroencefalograma",
       description:
         "Avaliação da atividade cerebral,indicado para funções críticas como motorista e operadores de máquinas.",

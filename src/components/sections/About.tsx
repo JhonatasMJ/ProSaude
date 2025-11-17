@@ -7,8 +7,8 @@ import { GraduationCap, Phone } from "lucide-react";
 export default function About() {
   return (
     <section
-      id="home"
-      className=" relative flex items-center pt-52  pb-36"
+      id="about"
+      className="relative flex items-center pt-52 pb-36 w-full"
     >
       <motion.div
         className="absolute left-0 top-1/2 -translate-y-1/2 w-2/5 h-full hidden md:block"

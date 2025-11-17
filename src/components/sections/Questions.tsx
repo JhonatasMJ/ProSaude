@@ -10,9 +10,9 @@ import { motion } from "framer-motion";
 
 export default function Questions() {
   return (
-    <section className="bg-marca2 ">
+    <section className="bg-marca2 w-full">
       <div className="flex flex-col items-center justify-center py-20 max-w-[1200px] mx-auto relative overflow-hidden">
-        {/* Decoradores animados */}
+   
         <motion.div
           initial={{ opacity: 0, x: 50, rotate: 45 }}
           whileInView={{ opacity: 1, x: 0, rotate: 90 }}
@@ -84,7 +84,6 @@ export default function Questions() {
             )}
           </Accordion>
 
-          {/* Coluna 2 */}
           <Accordion type="single" collapsible className="w-full space-y-3">
             {["Sugerir alguma pergunta 02", "Sugerir alguma pergunta 04", "Sugerir alguma pergunta 06"].map(
               (title, i) => (
