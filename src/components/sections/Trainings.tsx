@@ -71,7 +71,7 @@ export default function Trainings() {
             viewport={{ amount: 0.3 }}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
-            <Button className="mt-8 bg-marca1 hover:bg-marca1 hover:ring-3 hover:ring-marca1/50 hover:scale-105 transform transition duration-300 border-none text-white px-10 py-5 text-sm sm:text-base relative overflow-hidden">
+            <Button className="mt-8 bg-marca1 hover:bg-marca1 hover:ring-3 hover:ring-marca1/50 hover:scale-[1.02] transform transition duration-300 border-none text-white px-10 py-5 text-sm sm:text-base relative overflow-hidden">
               <Link
                 to="contact"
                 smooth={true}
@@ -158,7 +158,7 @@ export default function Trainings() {
           viewport={{ amount: 0.3 }}
           transition={{ duration: 0.6, delay: 0.8 }}
         >
-          <Button className="w-full bg-marca1 hover:bg-marca1 hover:ring-3 hover:ring-marca1/50 hover:scale-105 transform transition duration-300 border-none text-white py-5 text-sm relative overflow-hidden">
+          <Button className="w-full bg-marca1 hover:bg-marca1 hover:ring-3 hover:ring-marca1/50 hover:scale-[1.02] transform transition duration-300 border-none text-white py-5 text-sm relative overflow-hidden">
             <Link
               to="contact"
               smooth={true}

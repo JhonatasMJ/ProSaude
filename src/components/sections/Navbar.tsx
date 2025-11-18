@@ -1,5 +1,3 @@
-"use client"
-
 import { useState } from "react"
 import { motion } from "motion/react"
 import { Link } from "react-scroll"
@@ -27,13 +25,13 @@ export default function Navbar() {
       transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
     >
       
-      <div className="bg-marca1 flex items-center justify-center text-white text-[10px] sm:text-xs md:text-sm font-medium py-1.5 px-2 text-center w-full">
+      <div className="bg-marca1 flex items-center justify-center text-white text-[10px] sm:text-xs md:text-sm font-medium py-1.5  text-center w-full">
         <p className="max-w-full break-words px-2">Av. Marechal Deodoro da Fonseca, 1104 Jardim Paraíso - Monte Alto-SP</p>
       </div>
 
      
       <div className="shadow-sm bg-white">
-        <nav className="py-4 max-w-[1200px] mx-auto flex items-center justify-between px-4 sm:px-6">
+        <nav className="py-4 max-w-[1200px] mx-auto flex items-center justify-between sm:px-6">
        
           <Link to="home" smooth offset={-120} duration={500} onSetActive={() => setActiveLink("home")}>
             <Logo className="cursor-pointer w-36 sm:w-48 text-marca1" />
@@ -76,7 +74,7 @@ export default function Navbar() {
                 offset={-120}
                 duration={500}          
               >
-            <Button className="bg-marca2 hover:bg-marca2/90 px-6 text-white">
+            <Button className="bg-marca2 hover:bg-marca2 hover:ring-3 hover:ring-marca2/50 hover:scale-[1.02] transform transition duration-300 border-none text-white px-6 relative overflow-hidden">
                 Contato
             </Button>
               </Link>
@@ -144,7 +142,7 @@ export default function Navbar() {
                     onClick={() => setIsMenuOpen(false)}
                     className="block"
                   >
-                    <Button className="bg-marca2 hover:bg-marca2/90 w-full text-white py-6 text-base font-semibold">
+                    <Button className="bg-marca2 hover:bg-marca2 hover:ring-3 hover:ring-marca2/50 hover:scale-[1.02] transform transition duration-300 border-none text-white w-full py-6 text-base font-semibold relative overflow-hidden">
                       Contato
                     </Button>
                   </Link>

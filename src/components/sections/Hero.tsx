@@ -53,7 +53,7 @@ export default function Hero() {
                 duration={500}
                 className="relative z-10 flex items-center gap-2"
               >
-            <Button className=" bg-marca1 hover:bg-marca1 hover:ring-3 hover:ring-marca1/50 hover:scale-105 transform transition duration-300 border-none text-white px-12 group relative overflow-hidden flex-1">
+            <Button className=" bg-marca1 hover:bg-marca1 hover:ring-3 hover:ring-marca1/50 hover:scale-[1.02] transform transition duration-300 border-none text-white px-12 group relative overflow-hidden flex-1">
                 Serviços
                 <motion.div
                   variants={{
@@ -72,7 +72,7 @@ export default function Hero() {
                 duration={500}
                 className="relative z-10 flex items-center gap-2 "
               >
-            <Button className=" bg-marca2 hover:bg-marca2 hover:ring-3 hover:ring-marca2/50 hover:scale-105 transform transition duration-300 border-none text-white px-12 group relative overflow-hidden flex-1 ">
+            <Button className=" bg-marca2 hover:bg-marca2 hover:ring-3 hover:ring-marca2/50 hover:scale-[1.02] transform transition duration-300 border-none text-white px-12 group relative overflow-hidden flex-1 ">
                 Sobre
                 <motion.div
                   variants={{

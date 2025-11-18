@@ -82,7 +82,7 @@ export default function About() {
               whileHover={{ scale: 1.01 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button className="w-full bg-marca2 text-md group relative overflow-hidden  hover:bg-marca2 hover:ring-3 hover:ring-marca2/50 hover:scale-101 transform transition duration-300 border-none text-white px-10 py-5 text-sm sm:text-base ">
+              <Button className="w-full bg-marca2 hover:bg-marca2 hover:ring-3 hover:ring-marca2/50 hover:scale-[1.02] transform transition duration-300 border-none text-white px-10 py-5 text-sm sm:text-base relative overflow-hidden">
                 <span className="relative z-10 flex items-center gap-2 justify-center">
                   Cursos e Palestras
                   <motion.div
@@ -106,7 +106,7 @@ export default function About() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button className="w-full bg-marca1 text-md group relative overflow-hidden">
+              <Button className="w-full bg-marca1 hover:bg-marca1 hover:ring-3 hover:ring-marca1/50 hover:scale-[1.02] transform transition duration-300 border-none text-white px-10 py-5 text-sm sm:text-base relative overflow-hidden">
                 <span className="relative z-10 flex items-center gap-2 justify-center">
                   Contato
                   <motion.div

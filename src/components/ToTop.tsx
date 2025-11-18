@@ -31,7 +31,7 @@ export default function ToTop() {
           className="fixed bottom-8 right-8 z-50"
         >
           <Link to={"home"} smooth offset={-120} duration={800}>
-            <Button className="w-10 h-10 rounded-md mt-8 bg-marca1 hover:bg-marca1 hover:ring-3 hover:ring-marca1/50 hover:scale-105 transform transition duration-300 border-none text-white text-sm sm:text-base relative overflow-hidden">
+            <Button className="w-10 h-10 rounded-md mt-8 bg-marca1 hover:bg-marca1 hover:ring-3 hover:ring-marca1/50 hover:scale-[1.02] transform transition duration-300 border-none text-white text-sm sm:text-base relative overflow-hidden">
               <ArrowUp className="h-5 w-5" />
             </Button>
           </Link>

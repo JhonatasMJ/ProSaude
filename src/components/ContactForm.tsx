@@ -121,10 +121,10 @@ export default function ContactForm() {
 
           <Button
             type="submit"
-            className={`w-full transition-colors py-6 text-md ${
+            className={`w-full py-6 text-md relative overflow-hidden transform transition duration-300 border-none text-white ${
               status === "sent"
-                ? "bg-marca1 "
-                : "bg-marca2 hover:bg-marca1"
+                ? "bg-marca1 hover:bg-marca1 hover:ring-3 hover:ring-marca1/50 hover:scale-[1.02]"
+                : "bg-marca2 hover:bg-marca2 hover:ring-3 hover:ring-marca2/50 hover:scale-[1.02]"
             }`}
             disabled={status === "sending"}
           >
