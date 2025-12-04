@@ -9,7 +9,7 @@ export default function Contact() {
       icon: Mail,
       label: "Email",
       value: "prosaudemontealto@gmail.com",
-      href: "mailto:contato@empresa.com",
+      href: "mailto:prosaudemontealto@gmail.com",
     },
     {
       icon: Phone,

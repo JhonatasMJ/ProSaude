@@ -6,7 +6,10 @@ import { Link } from "react-scroll";
 
 export default function Hero() {
   return (
-    <section id="home" className="relative flex items-center py-40 md:py-74 w-full">
+    <section
+      id="home"
+      className="relative flex items-center py-40 md:py-74 w-full"
+    >
       <div className="max-w-[1200px] mx-auto px-4 z-10 w-full relative">
         <Decorator className="absolute -top-1/3  w-12 h-12" />
         <motion.span
@@ -46,48 +49,44 @@ export default function Hero() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 4 }}
         >
-          <motion.div>
-              <Link
-                to="services"
-                smooth={true}
-                duration={500}
-                className="relative z-10 flex items-center gap-2"
-              >
-            <Button className=" bg-marca1 hover:bg-marca1 hover:ring-3 hover:ring-marca1/50 hover:scale-[1.02] transform transition duration-300 border-none text-white px-12 group relative overflow-hidden flex-1">
+          <motion.div className="flex-1 md:flex-initial md:w-1/4">
+            <Link
+              to="services"
+              smooth={true}
+              duration={500}
+              className="relative z-10 flex items-center gap-2"
+            >
+              <Button className=" bg-marca1 hover:bg-marca1 hover:ring-3 hover:ring-marca1/50 hover:scale-[1.02] transform transition duration-300 border-none text-white px-12 group relative overflow-hidden flex-1">
                 Serviços
                 <motion.div
                   variants={{
                     hover: { x: 5, transition: { duration: 0.6 } },
                   }}
-                >
-              
-                </motion.div>
-            </Button>
-              </Link>
+                ></motion.div>
+              </Button>
+            </Link>
           </motion.div>
-       <motion.div>
-              <Link
-                to="about"
-                smooth={true}
-                duration={500}
-                className="relative z-10 flex items-center gap-2 "
-              >
-            <Button className=" bg-marca2 hover:bg-marca2 hover:ring-3 hover:ring-marca2/50 hover:scale-[1.02] transform transition duration-300 border-none text-white px-12 group relative overflow-hidden flex-1 ">
+          <motion.div className="flex-1 md:flex-initial md:w-1/4">
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              className="relative z-10 flex items-center gap-2 "
+            >
+              <Button className=" bg-marca2 hover:bg-marca2 hover:ring-3 hover:ring-marca2/50 hover:scale-[1.02] transform transition duration-300 border-none text-white px-12 group relative overflow-hidden flex-1 ">
                 Sobre
                 <motion.div
                   variants={{
                     hover: { x: 5, transition: { duration: 0.6 } },
                   }}
-                >
-                 
-                </motion.div>
-            </Button>
-              </Link>
+                ></motion.div>
+              </Button>
+            </Link>
           </motion.div>
         </motion.div>
       </div>
       <motion.div
-        className="absolute right-0 top-1/2 -translate-y-1/2 w-2/5 h-full hidden md:block"
+        className="absolute right-0 top-1/2 -translate-y-1/2  w-2/5 h-full hidden md:block"
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
         animate={{ opacity: 1, x: 0 }}

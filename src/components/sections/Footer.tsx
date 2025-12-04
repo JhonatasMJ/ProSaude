@@ -47,8 +47,8 @@ export default function Footer() {
 
   return (
     <footer className="bg-marca2 text-white w-full">
-      <div className="max-w-[1200px] mx-auto sm:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-8 lg:gap-12 py-12 border-b border-white/10">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 py-12 border-b border-white/10">
           <motion.div
             className="lg:col-span-1"
             initial={{ opacity: 0, y: 20 }}
@@ -78,7 +78,7 @@ export default function Footer() {
                     duration={500}
                     className="text-white/80 hover:text-white transition-colors cursor-pointer text-sm flex items-center gap-2 group"
                   >
-                    <span className="w-1.5 h-1.5 bg-marca1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <span className="w-1.5 h-1.5 bg-marca1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hidden md:block" />
                     {link.name}
                   </Link>
                 </li>

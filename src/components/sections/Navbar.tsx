@@ -31,7 +31,7 @@ export default function Navbar() {
 
      
       <div className="shadow-sm bg-white">
-        <nav className="py-4 max-w-[1200px] mx-auto flex items-center justify-between sm:px-6">
+        <nav className="py-4 max-w-[1200px] mx-auto flex items-center justify-between px-4 sm:px-6 ">
        
           <Link to="home" smooth offset={-120} duration={500} onSetActive={() => setActiveLink("home")}>
             <Logo className="cursor-pointer w-36 sm:w-48 text-marca1" />
