@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import Decorator from "@/assets/DecoratorSoluctions.svg?react";
+
 import { motion } from "framer-motion";
 import { questionsLeft, questionsRight } from "@/utils/questions";
 
@@ -12,26 +12,6 @@ export default function Questions() {
   return (
     <section className="bg-marca2 w-full">
       <div className="flex flex-col items-center justify-center py-20 max-w-[1200px] mx-auto relative overflow-hidden px-4 sm:px-6 lg:px-8">
-   
-        <motion.div
-          initial={{ opacity: 0, x: 50, rotate: 45 }}
-          whileInView={{ opacity: 1, x: 0, rotate: 90 }}
-          transition={{ duration: 1 }}
-          className="absolute top-10 right-0"
-        >
-          <Decorator className="w-12 h-12" />
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, x: -50, rotate: 0 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          className="absolute top-10 left-0"
-        >
-          <Decorator className="w-12 h-12" />
-        </motion.div>
-
-    
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

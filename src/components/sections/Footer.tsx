@@ -152,6 +152,15 @@ export default function Footer() {
           <p className="text-white text-sm">
             &copy; {year} Pró Saúde. Todos os direitos reservados.
           </p>
+          <p className="text-sm mt-2">
+            Site desenvolvido por{" "}
+            <a
+              href="https://jhonatas-portfolio.vercel.app/"
+              className="text-marca1 hover:marca1/90 transition-colors duration-300"
+            >
+              <strong>Jhow シ</strong>
+            </a>
+          </p>
         </motion.div>
       </div>
     </footer>
