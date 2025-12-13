@@ -8,7 +8,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative flex items-center pt-52 pb-36 w-full "
+      className="relative flex items-center pt-40 pb-20 md:pt-52 md:pb-36 w-full "
     >
       <motion.div
         className="absolute left-0 top-1/2 -translate-y-1/2 w-2/5 h-full hidden md:block"
@@ -26,7 +26,7 @@ export default function About() {
 
       <div className="max-w-[1200px] mx-auto px-4 z-10 w-full relative ml-auto">
         <div className="ml-auto max-w-[620px]">
-          <Decorator className="absolute -top-1/3 w-12 h-12" />
+          <Decorator className="absolute -top-1/5  md:-top-1/3  w-12 h-12" />
           <motion.span
             className="text-marca1 font-semibold text-lg"
             initial={{ opacity: 0, y: -20 }}

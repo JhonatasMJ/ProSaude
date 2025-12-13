@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import Decorator from "@/assets/DecoratorSoluctions.svg?react";
 import { motion } from "framer-motion";
+import { questionsLeft, questionsRight } from "@/utils/questions";
 
 export default function Questions() {
   return (
@@ -54,28 +55,20 @@ export default function Questions() {
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
     
           <Accordion type="single" collapsible className="w-full space-y-3 ">
-            {["Sugerir alguma pergunta 01", "Sugerir alguma pergunta 03", "Sugerir alguma pergunta 05"].map(
-              (title, i) => (
+            {questionsLeft.map(
+              (question, i) => (
                 <motion.div
-                  key={title}
+                  key={i}
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: i * 0.15 }}
                 >
                   <AccordionItem value={`item-${i + 1}`}>
                     <AccordionTrigger className="text-white text-md md:text-xl">
-                      {title}
+                      {question.title}
                     </AccordionTrigger>
                     <AccordionContent className="flex flex-col gap-4 text-balance text-white/80">
-                      <p>
-                        Nosso produto combina tecnologia de ponta com design
-                        moderno. Construído com materiais de alta qualidade,
-                        oferece desempenho e confiabilidade excepcionais.
-                      </p>
-                      <p>
-                        Conta com interface intuitiva e recursos avançados que
-                        tornam o uso simples e eficiente.
-                      </p>
+                      {question.content}
                     </AccordionContent>
                   </AccordionItem>
                 </motion.div>
@@ -84,24 +77,20 @@ export default function Questions() {
           </Accordion>
 
           <Accordion type="single" collapsible className="w-full space-y-3">
-            {["Sugerir alguma pergunta 02", "Sugerir alguma pergunta 04", "Sugerir alguma pergunta 06"].map(
-              (title, i) => (
+            {questionsRight.map(
+              (question, i) => (
                 <motion.div
-                  key={title}
+                  key={i}
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: i * 0.15 }}
                 >
                   <AccordionItem value={`item-${i + 4}`}>
                     <AccordionTrigger className="text-white text-md md:text-xl">
-                      {title}
+                      {question.title}
                     </AccordionTrigger>
                     <AccordionContent className="flex flex-col gap-4 text-balance text-white/80">
-                      <p>
-                        Nosso produto combina tecnologia de ponta com design
-                        moderno. Construído com materiais de alta qualidade,
-                        oferece desempenho e confiabilidade excepcionais.
-                      </p>
+                      {question.content}
                     </AccordionContent>
                   </AccordionItem>
                 </motion.div>
